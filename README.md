@@ -2,6 +2,8 @@
 
 **This project is a replacement for the garyscorner for of nytimes/covid-19-data which will no longer be updated**
 
+[View Project](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/CovidData.ipynb)
+
 ## Description
 This is a simple project aimed at visualizing and comparing Covid-19 data from Louisiana, a state which is very important to us (people from Louisiana).  The main analysis/visualization are in the file CovidData.py, which pulls data from one or more submodiles or locations.
 
