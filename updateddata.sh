@@ -8,3 +8,5 @@ git pull
 
 
 cd ../
+
+jupyter notebook
