@@ -32,6 +32,9 @@ This is a simple project aimed at visualizing and comparing Covid-19 data from L
 
 ![Figure 8](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig8.jpg))
 
+![Figure 9](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig9.jpg))
+
+
 ## Limitation
 The analysis here is done with data from outside sources, which themselves are compiling data from other sources, which themselves...  Some of these sources have changed for the US, and there are reasons to believe that some of them may have issues with reliability, and so the analysis here can only be as good as the underlying data which is...questionable.  
 
