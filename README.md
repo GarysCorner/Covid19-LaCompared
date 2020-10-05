@@ -9,10 +9,13 @@ This is a simple project aimed at visualizing and comparing Covid-19 data from L
 
 ## Datasets
 
+* **[Louisiana Department of Health](https://ldh.la.gov/Coronavirus/)** - Data on new cases by parish as well as testing numbers.
 * **[nytimes/covid-19-data](https://github.com/nytimes/covid-19-data)** - Data on new cases and new deaths in the US and Louisiana were taken from this dataset.
 * **[Data on Covid-19 from Our World in Data](https://github.com/owid/covid-19-data/tree/master/public/data)**
 * **[U.S. Census Bureau](https://www.census.gov)** - Population of the US and of Louisiana were taken from the Census Bureau and used for per capita comparisons.
 * **[Our World in Data](https://ourworldindata.org/world-population-growth)** - World population
+
+Datasets taken from LaDH are dated by sample collection date, but NyTimes and OWID data is by reported date, so there is an offset in the dates between New Orleans/EBR and other datasets.  Please make note of this when drawing any conclusions.
 
 ## Output
 
@@ -29,6 +32,11 @@ This is a simple project aimed at visualizing and comparing Covid-19 data from L
 ![Figure 6](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig6.jpg))
 
 ![Figure 7](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig7.jpg))
+
+![Figure 8](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig8.jpg))
+
+![Figure 9](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig9.jpg))
+
 
 ## Limitation
 The analysis here is done with data from outside sources, which themselves are compiling data from other sources, which themselves...  Some of these sources have changed for the US, and there are reasons to believe that some of them may have issues with reliability, and so the analysis here can only be as good as the underlying data which is...questionable.  
