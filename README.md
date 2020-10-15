@@ -39,9 +39,7 @@ Datasets taken from LaDH are dated by sample collection date, but NyTimes and OW
 
 
 ## Limitation
-The analysis here is done with data from outside sources, which themselves are compiling data from other sources, which themselves...  Some of these sources have changed for the US, and there are reasons to believe that some of them may have issues with reliability, and so the analysis here can only be as good as the underlying data which is...questionable.  
-
-*Of note the data related to new cases and new deaths took on a weekly pattern after the CDC lost control of the data which is reason to be suspicious*
+The analysis here is done with data from outside sources, which themselves are compiling data from other sources, which themselves...  Some of these sources have changed for the US, and there are reasons to believe that some of them may have issues with reliability, and so the analysis here can only be as good as the underlying data, and this author makes no claims about that data.
 
 Please excuse spelling, I hammered this out pretty quick, and if you are reading this it means I didn't follow through on circling back to fix it :(
 
