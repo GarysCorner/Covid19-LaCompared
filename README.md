@@ -19,15 +19,7 @@ Datasets taken from LaDH are dated by sample collection date, but NyTimes and OW
 
 ## Output
 
-![Figure 1](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig1.jpg)
-![Figure 2](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig2.jpg)
-![Figure 3](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig3.jpg)
-![Figure 4](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig4.jpg)
-![Figure 8](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig8.jpg)
-![Figure 5](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig5.jpg)
-![Figure 6](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig6.jpg)
-![Figure 7](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig7.jpg)
-![Figure 9](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig9.jpg))
+![Figure 1](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig1.jpg)![Figure 2](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig2.jpg)![Figure 3](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig3.jpg)![Figure 4](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig4.jpg)![Figure 8](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig8.jpg)![Figure 5](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig5.jpg)![Figure 6](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig6.jpg)![Figure 7](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig7.jpg)![Figure 9](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig9.jpg))
 
 
 ## Limitation
