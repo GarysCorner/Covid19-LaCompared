@@ -11,5 +11,9 @@ curl -O https://ldh.la.gov/assets/oph/Coronavirus/data/LA_COVID_TESTBYDAY_PARISH
 
 cd ../
 
+rm fig*.jpg
+
+python3 CovidData.py
+
 #this became more of a hassel
 #jupyter notebook
