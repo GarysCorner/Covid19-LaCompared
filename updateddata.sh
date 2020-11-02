@@ -15,5 +15,4 @@ rm fig*.jpg
 
 python3 CovidData.py
 
-#this became more of a hassel
-#jupyter notebook
+python3 MaskUseOverview.py
