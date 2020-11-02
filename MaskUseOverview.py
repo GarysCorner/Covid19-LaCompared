@@ -9,7 +9,7 @@ import pandas as pd
 import numpy as np
 
 
-# In[40]:
+# In[2]:
 
 
 df = pd.read_csv('./covid-19-data/mask-use/mask-use-by-county.csv')
@@ -17,13 +17,13 @@ df.index = df['COUNTYFP']
 df.head()
 
 
-# In[48]:
+# In[3]:
 
 
 df_geocodes = pd.read_excel('./uscensus/all-geocodes-v2018.xlsx', skiprows=4)
 
 
-# In[54]:
+# In[4]:
 
 
 fipscode_u = df_geocodes[['State Code (FIPS)','County Code (FIPS)']].to_numpy()
@@ -35,13 +35,13 @@ df_geocodes.index = fipscodes
     
 
 
-# In[57]:
+# In[5]:
 
 
 df = df.join(df_geocodes, how='left')
 
 
-# In[96]:
+# In[6]:
 
 
 la_df = df[df['State Code (FIPS)'] == 22]
@@ -49,7 +49,7 @@ la_df['parish'] = la_df['Area Name (including legal/statistical area description
 la_df.tail()
 
 
-# In[133]:
+# In[21]:
 
 
 fig,axs = plt.subplots(3,figsize=(10,12))
@@ -68,6 +68,10 @@ for idx,ax in zip(range(0,pergraph * len(axs),pergraph),axs):
     
     ax.tick_params(axis='x',rotation=90)
     fig.legend(reversed(plots),reversed(metrics))
+    
+    ax.set_yticks(np.arange(0,1.2,0.2))
+    ax.set_yticklabels(["%d%%" % x for x in range(0,101,20)])
+    
     
 fig.suptitle('"How Often Do You Wear a Mask in Public?" by Parish  (July)',fontsize='xx-large')
 fig.tight_layout()
