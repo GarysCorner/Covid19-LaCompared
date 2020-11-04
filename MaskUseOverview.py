@@ -49,7 +49,7 @@ la_df['parish'] = la_df['Area Name (including legal/statistical area description
 la_df.tail()
 
 
-# In[21]:
+# In[22]:
 
 
 fig,axs = plt.subplots(3,figsize=(10,12))
@@ -71,7 +71,7 @@ for idx,ax in zip(range(0,pergraph * len(axs),pergraph),axs):
     
     ax.set_yticks(np.arange(0,1.2,0.2))
     ax.set_yticklabels(["%d%%" % x for x in range(0,101,20)])
-    
+    ax.grid(axis='y')
     
 fig.suptitle('"How Often Do You Wear a Mask in Public?" by Parish  (July)',fontsize='xx-large')
 fig.tight_layout()
