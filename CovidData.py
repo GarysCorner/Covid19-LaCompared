@@ -209,6 +209,9 @@ us_items_pertick += 1
 
 us_df.tail(2)
 
+#used to set xlim to lign up graphs
+xdatalen = us_df.index.shape[0]
+
 
 # In[6]:
 
@@ -432,8 +435,11 @@ def plotme(df, ax,xticks,addeaths=True):
         ax.bar(df.index,df['NewDeaths'], color='r', label='New Deaths')
         ax.plot(df.index,df['NewDeathsRollAvg'], color = 'g', label='New Deaths 7DRollAvg')
 
-    ax.set_xticks(xticks)
-    ax.set_xticklabels(df.iloc[xticks,0])
+    ax.set_xticks(us_ticks)
+    ax.set_xticklabels(us_df.iloc[us_ticks,0])
+    xmarg,_ = ax.margins()
+    ax.set_xlim(xmax=xdatalen + (xdatalen * xmarg))
+    
     drawindexofCDCdataloss(df,ax)
     holidays(df,ax)
     ax.legend()
@@ -442,6 +448,8 @@ def plotme(df, ax,xticks,addeaths=True):
     ax.set_yticks(yticks)        
     ax.set_yticklabels(yticklabels)
     ax.set_ylabel("New Cases")
+    
+    
     
 axs[0].title.set_text('Orleans')
 #LACFline(orleans_df,axs[0])
@@ -483,8 +491,11 @@ def plotme(df,ax, xticks, addeaths = True):
         ax.bar(df.index,df['deaths'], color='r', label='Deaths')
         ax.plot(df.index,df['deaths_ravg'], color = 'g', label='Deaths RollAvg')
         
-    ax.set_xticks(xticks)
-    ax.set_xticklabels(df.iloc[xticks,0])
+    ax.set_xticks(us_ticks)
+    ax.set_xticklabels(us_df.iloc[us_ticks,0])
+    xmarg,_ = ax.margins()
+    ax.set_xlim(xmax=xdatalen + (xdatalen * xmarg))
+    
     drawindexofCDCdataloss(df,ax)
     holidays(df,ax)
     ax.legend()
@@ -532,8 +543,12 @@ def plotme(df,ax,xticks):
 
     ax.bar(df.index,df['NewDeaths'], color = 'y', label="New Deaths")
     ax.plot(df.index,df['NewDeathsRollAvg'], color='g', label="New Deaths 7DRollAvg")
-    ax.set_xticks(xticks)
-    ax.set_xticklabels(df.iloc[xticks,0])
+    
+    ax.set_xticks(us_ticks)
+    ax.set_xticklabels(us_df.iloc[us_ticks,0])
+    xmarg,_ = ax.margins()
+    ax.set_xlim(xmax=xdatalen + (xdatalen * xmarg))
+    
     drawindexofCDCdataloss(df,ax)
     holidays(df,ax)
     ax.legend()
@@ -570,6 +585,8 @@ ebr_df_weekly = pd.DataFrame(ebr_df.groupby('week')['NewCases'].sum())
 tamm_df_weekly = pd.DataFrame(tamm_df.groupby('week')['NewCases'].sum())
 la_df_weekly = la_df.groupby('week')[['NewCases','NewDeaths']].sum()
 us_df_weekly = us_df.groupby('week')[['NewCases','NewDeaths']].sum()
+xdatalenweekly = us_df['week'].max()
+xdatastartweekly = us_df['week'].min()
 world_df_weekly = world_df.groupby('week')[['NewCases','NewDeaths']].sum()
 
 weeks_rollingavg = 3
@@ -748,10 +765,21 @@ def plotme(df,ax, title = "Graphs", color = 'y', linecolor = 'r'):
     ax.set_ylabel("New Cases")
     
     weeks = ax.get_xticks()
+    #labels = [datetime.strptime("2020-%s-0" % str(int(week)).zfill(2), "%Y-%U-%w").strftime("%m-%d") for week in weeks]
+    #ax.set_xticks(weeks)
+    #ax.set_xticklabels(labels)
+    
+    weeks = [x for x in range(xdatastartweekly,xdatalenweekly)]
     labels = [datetime.strptime("2020-%s-0" % str(int(week)).zfill(2), "%Y-%U-%w").strftime("%m-%d") for week in weeks]
+
     ax.set_xticks(weeks)
     ax.set_xticklabels(labels)
-    ax.set_xlim(df.index[0]-ax.patches[0].get_width(),df.index[-2]+ax.patches[0].get_width())
+    
+    xmarg,_ = ax.margins()
+    ax.set_xlim(xmin=xdatastartweekly - (xdatastartweekly*xmarg) ,xmax=xdatalenweekly)
+    
+    ax.tick_params(axis='x',rotation=90)
+    
     ax.legend()
       
 fig, axs = plt.subplots(6, figsize=(15,22))
@@ -763,6 +791,8 @@ plotme(tamm_df_weekly,axs[2],title="St. Tammany")
 plotme(la_df_weekly,axs[3], title="Louisiana")
 plotme(us_df_weekly,axs[4], title="US")
 plotme(world_df_weekly,axs[5],title="World")
+
+fig.tight_layout()
 
 plt.savefig("fig6.jpg")
 
@@ -783,11 +813,16 @@ def plotme(df,ax, title = "Graphs", color = 'y', linecolor='r'):
     ax.set_yticks(yticks)        
     ax.set_yticklabels(yticklabels)
     ax.set_ylabel("New Deaths")
-    weeks = ax.get_xticks()
+    #weeks = ax.get_xticks()
+    #labels = [datetime.strptime("2020-%s-0" % str(int(week)).zfill(2), "%Y-%U-%w").strftime("%m-%d") for week in weeks]
+    weeks = [x for x in range(xdatastartweekly,xdatalenweekly)]
     labels = [datetime.strptime("2020-%s-0" % str(int(week)).zfill(2), "%Y-%U-%w").strftime("%m-%d") for week in weeks]
     ax.set_xticks(weeks)
     ax.set_xticklabels(labels)
     ax.set_xlim(df.index[0]-ax.patches[0].get_width(),df.index[-2]+ax.patches[0].get_width())
+    
+    ax.tick_params(axis='x',rotation=90)
+    
     ax.legend()
     
 fig, axs = plt.subplots(3, figsize=(15,12))
@@ -796,6 +831,8 @@ fig.suptitle("Weekly New Deaths")
 plotme(la_df_weekly,axs[0], title="Louisiana")
 plotme(us_df_weekly,axs[1], title="US")
 plotme(world_df_weekly,axs[2],title="World")
+
+fig.tight_layout()
 
 plt.savefig("fig7.jpg")
 
