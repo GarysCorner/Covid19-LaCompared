@@ -477,11 +477,11 @@ fig.suptitle("New Daily Cases/Deaths Covid-19 La vs US")
 plt.savefig("fig1.jpg")
 
 
-# In[18]:
+# In[27]:
 
 
 #Figure 2
-fig, axs = plt.subplots(5, figsize=(15,25))
+fig, axs = plt.subplots(6, figsize=(15,25))
 
 def plotme(df,ax, xticks, addeaths = True):
     ax.bar(df.index,df['cases'], color='y', label='Cases')
@@ -516,16 +516,15 @@ axs[2].title.set_text("St. Tammany")
 plotme(tamm_df,axs[2],tamm_ticks,addeaths=False)
 
 axs[3].title.set_text('Louisiana')
+plotme(la_df,axs[3],la_ticks,addeaths=True)
 #adjustments for LA data issue 4/19
 LACFline(la_df,axs[3])
 
-plotme(la_df,axs[2],la_ticks)    
+axs[4].title.set_text('US')
+plotme(us_df,axs[4],us_ticks)
 
-axs[3].title.set_text('US')
-plotme(us_df,axs[3],us_ticks)
-
-axs[4].title.set_text("World")
-plotme(world_df,axs[4],world_ticks)
+axs[5].title.set_text("World")
+plotme(world_df,axs[5],world_ticks)
 
 fig.suptitle("Covid-19 Orleans/EBR/La/US vs World Totals")
 
