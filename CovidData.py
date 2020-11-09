@@ -418,7 +418,7 @@ axs.set_title("NyTimes vs La Dept of Health New Case data from Louisiana Rolling
 fig.savefig("fig9.jpg")
 
 
-# In[17]:
+# In[ ]:
 
 
 #Figure 1
@@ -477,7 +477,7 @@ fig.suptitle("New Daily Cases/Deaths Covid-19 La vs US")
 plt.savefig("fig1.jpg")
 
 
-# In[27]:
+# In[ ]:
 
 
 #Figure 2
@@ -531,7 +531,7 @@ fig.suptitle("Covid-19 Orleans/EBR/La/US vs World Totals")
 plt.savefig("fig2.jpg")
 
 
-# In[19]:
+# In[ ]:
 
 
 #Figure 3
@@ -576,7 +576,7 @@ fig.suptitle("Covid-19 La vs US New Deaths Daily")
 plt.savefig("fig3.jpg")
 
 
-# In[20]:
+# In[ ]:
 
 
 orleans_df_weekly = pd.DataFrame(orleans_df.groupby('week')['NewCases'].sum())
@@ -606,7 +606,7 @@ orleans_df.tail()
 #us_df_weekly.tail(2)
 
 
-# In[21]:
+# In[ ]:
 
 
 #Figure 4
@@ -639,11 +639,22 @@ ax2lines = []
 ax1lines.append( plotme(orleans_df,axs[0],orleans_ticks,'NewCasesPerCapita_ravg',"Orleans New Cases", color = 'r')[0][0])
 ax1lines.append( plotme(ebr_df,axs[0],ebr_ticks,'NewCasesPerCapita_ravg',"Baton Rouge New Cases", color = 'orange')[0][0])
 ax1lines.append( plotme(tamm_df,axs[0],orleans_ticks,'NewCasesPerCapita_ravg',"St. Tammany New Cases", color = 'purple')[0][0])
-for col,ax in zip([('NewCasesPerCapita_ravg','New Cases'),('NewDeathsPerCapita_ravg', 'New Deaths')],((axs[0],ax1lines),(axs[1],ax2lines))):
+ax1lines.append( plotme(la2_df,axs[0],la2_ticks, 'NewCasesPerCapita_ravg',"La New Cases (LaDH)", color='b')[0][0])
+
+ax1lines.append( plotme(us_df,axs[0],us_ticks, 'NewCasesPerCapita_ravg','US New Cases', color='g')[0][0])
+ax1lines.append( plotme(world_df,axs[0],world_ticks,'NewCasesPerCapita_ravg',"World New Cases", color='m')[0][0])
+
+ax2lines.append( plotme(la_df,axs[1],la_ticks, 'NewDeathsPerCapita_ravg',"La New Deaths (nytimes)", color='b')[0][0])
+ax2lines.append( plotme(us_df,axs[1],us_ticks, 'NewDeathsPerCapita_ravg','US New Deaths', color='g')[0][0])
+ax2lines.append( plotme(world_df,axs[1],world_ticks,'NewDeathsPerCapita_ravg',"World New Daths", color='m')[0][0])
+
+
+
+#for col,ax in zip([('NewCasesPerCapita_ravg','New Cases'),('NewDeathsPerCapita_ravg', 'New Deaths')],((axs[0],ax1lines),(axs[1],ax2lines))):
     
-    ax[1].append( plotme(la_df,ax[0],la_ticks, col[0],"La %s" % col[1], color='b')[0][0])
-    ax[1].append( plotme(us_df,ax[0],us_ticks, col[0],'US %s' % col[1], color='g')[0][0])
-    ax[1].append( plotme(world_df,ax[0],world_ticks,col[0],"World %s" % col[1], color='m')[0][0])
+#    ax[1].append( plotme(la_df,ax[0],la_ticks, col[0],"La %s" % col[1], color='b')[0][0])
+#    ax[1].append( plotme(us_df,ax[0],us_ticks, col[0],'US %s' % col[1], color='g')[0][0])
+#    ax[1].append( plotme(world_df,ax[0],world_ticks,col[0],"World %s" % col[1], color='m')[0][0])
     
 axs[0].legend(handles=ax1lines)
 axs[1].legend(handles=ax2lines)
@@ -659,7 +670,7 @@ fig.suptitle("Covid-19 La vs US New Cases/Deaths per capita 7 day rolling avg ")
 plt.savefig("fig4.jpg")
 
 
-# In[22]:
+# In[ ]:
 
 
 #Figure 5
@@ -702,7 +713,7 @@ fig.suptitle("Covid-19 Orleans vs * New Cases 7 day rolling avg Compared (separa
 plt.savefig("fig5.jpg")
 
 
-# In[23]:
+# In[ ]:
 
 
 #Figure 5
@@ -746,7 +757,7 @@ fig.suptitle("Covid-19 La vs US vs World New Cases/Deaths 7 day rolling avg Comp
 plt.savefig("fig8.jpg")
 
 
-# In[24]:
+# In[ ]:
 
 
 #Figure 6
@@ -796,7 +807,7 @@ fig.tight_layout()
 plt.savefig("fig6.jpg")
 
 
-# In[25]:
+# In[ ]:
 
 
 #Figure 7
