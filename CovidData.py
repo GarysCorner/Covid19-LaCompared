@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# ### Data not up-to-date in this file
+# 
+# The file used to update data daily is CovidData.py which is taken from this notebook.  As such the data and graphics here may not be up to date with the rest of the project
+
 # In[1]:
 
 
@@ -129,6 +133,11 @@ def holidays(df,ax):
     
     return line
     
+def ladhdatamax(ax):
+    """
+        Adds a line where the LaDH data stops
+    """
+    return ax.axvline(orleans_df.index[-1], color='red', label='End LaDH dataset')
 
 
 # ![image.png](attachment:image.png)
@@ -418,7 +427,7 @@ axs.set_title("NyTimes vs La Dept of Health New Case data from Louisiana Rolling
 fig.savefig("fig9.jpg")
 
 
-# In[ ]:
+# In[17]:
 
 
 #Figure 1
@@ -442,6 +451,7 @@ def plotme(df, ax,xticks,addeaths=True):
     
     drawindexofCDCdataloss(df,ax)
     holidays(df,ax)
+    ladhdatamax(ax)
     ax.legend()
     
     yticks,yticklabels = getyTicks(df,'NewCases')
@@ -452,7 +462,6 @@ def plotme(df, ax,xticks,addeaths=True):
     
     
 axs[0].title.set_text('Orleans')
-#LACFline(orleans_df,axs[0])
 plotme(orleans_df,axs[0],orleans_ticks, addeaths=False)
 
 axs[1].title.set_text("East Baton Rouge")
@@ -477,7 +486,7 @@ fig.suptitle("New Daily Cases/Deaths Covid-19 La vs US")
 plt.savefig("fig1.jpg")
 
 
-# In[ ]:
+# In[18]:
 
 
 #Figure 2
@@ -498,6 +507,7 @@ def plotme(df,ax, xticks, addeaths = True):
     
     drawindexofCDCdataloss(df,ax)
     holidays(df,ax)
+    ladhdatamax(ax)
     ax.legend()
     
 
@@ -531,7 +541,7 @@ fig.suptitle("Covid-19 Orleans/EBR/La/US vs World Totals")
 plt.savefig("fig2.jpg")
 
 
-# In[ ]:
+# In[19]:
 
 
 #Figure 3
@@ -550,6 +560,7 @@ def plotme(df,ax,xticks):
     
     drawindexofCDCdataloss(df,ax)
     holidays(df,ax)
+    #ladhdatamax(ax)  #no ladh data on this one
     ax.legend()
 
     yticks,yticklabels = getyTicks(df,'NewDeaths')
@@ -576,7 +587,7 @@ fig.suptitle("Covid-19 La vs US New Deaths Daily")
 plt.savefig("fig3.jpg")
 
 
-# In[ ]:
+# In[20]:
 
 
 orleans_df_weekly = pd.DataFrame(orleans_df.groupby('week')['NewCases'].sum())
@@ -606,7 +617,7 @@ orleans_df.tail()
 #us_df_weekly.tail(2)
 
 
-# In[ ]:
+# In[21]:
 
 
 #Figure 4
@@ -644,10 +655,13 @@ ax1lines.append( plotme(la2_df,axs[0],la2_ticks, 'NewCasesPerCapita_ravg',"La Ne
 ax1lines.append( plotme(us_df,axs[0],us_ticks, 'NewCasesPerCapita_ravg','US New Cases', color='g')[0][0])
 ax1lines.append( plotme(world_df,axs[0],world_ticks,'NewCasesPerCapita_ravg',"World New Cases", color='m')[0][0])
 
+ax1lines.append(ladhdatamax(axs[0]))
+
 ax2lines.append( plotme(la_df,axs[1],la_ticks, 'NewDeathsPerCapita_ravg',"La New Deaths (nytimes)", color='b')[0][0])
 ax2lines.append( plotme(us_df,axs[1],us_ticks, 'NewDeathsPerCapita_ravg','US New Deaths', color='g')[0][0])
 ax2lines.append( plotme(world_df,axs[1],world_ticks,'NewDeathsPerCapita_ravg',"World New Daths", color='m')[0][0])
 
+#ax2lines.append(ladhdatamax(axs[1]))  #no ladh data
 
 
 #for col,ax in zip([('NewCasesPerCapita_ravg','New Cases'),('NewDeathsPerCapita_ravg', 'New Deaths')],((axs[0],ax1lines),(axs[1],ax2lines))):
@@ -670,7 +684,7 @@ fig.suptitle("Covid-19 La vs US New Cases/Deaths per capita 7 day rolling avg ")
 plt.savefig("fig4.jpg")
 
 
-# In[ ]:
+# In[22]:
 
 
 #Figure 5
@@ -713,7 +727,7 @@ fig.suptitle("Covid-19 Orleans vs * New Cases 7 day rolling avg Compared (separa
 plt.savefig("fig5.jpg")
 
 
-# In[ ]:
+# In[23]:
 
 
 #Figure 5
@@ -729,12 +743,14 @@ def plotme(df,ax,xticks, column, label, color = 'r'):
     drawindexofCDCdataloss(df,ax)
     lines.append(holidays(df,ax))
     lines.append(LACFline(df,ax))   #I'm not sure the data for deaths and cases was effected by the adjustment
+    lines.append(ladhdatamax(ax))
     
     yticks,yticklabels = getyTicks(df,column)
     ax.set_yticks(yticks)        
     ax.set_yticklabels(yticklabels)
     ax.set_ylabel(label,color=color)
     ax.tick_params(axis='y',color=color,labelcolor=color)
+    ax.set_xlim(xmax=xdatalen)
     
     return lines
     
@@ -757,7 +773,7 @@ fig.suptitle("Covid-19 La vs US vs World New Cases/Deaths 7 day rolling avg Comp
 plt.savefig("fig8.jpg")
 
 
-# In[ ]:
+# In[24]:
 
 
 #Figure 6
@@ -787,7 +803,6 @@ def plotme(df,ax, title = "Graphs", color = 'y', linecolor = 'r'):
     
     xmarg,_ = ax.margins()
     ax.set_xlim(xmin=xdatastartweekly - (xdatastartweekly*xmarg) ,xmax=xdatalenweekly)
-    
     ax.tick_params(axis='x',rotation=90)
     
     ax.legend()
@@ -807,7 +822,7 @@ fig.tight_layout()
 plt.savefig("fig6.jpg")
 
 
-# In[ ]:
+# In[25]:
 
 
 #Figure 7
