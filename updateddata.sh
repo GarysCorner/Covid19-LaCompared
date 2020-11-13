@@ -21,10 +21,12 @@ rm fig7.jpg
 rm fig8.jpg
 rm fig9.jpg
 
-python3 CovidData.py
+#python3 CovidData.py
 
 #new data is not generated for this dataset
 #python3 MaskUseOverview.py
+
+jupyter lab
 
 git commit -m "updated with data from upstead datasources `date`" fig1.jpg fig2.jpg fig3.jpg fig4.jpg fig5.jpg fig6.jpg fig7.jpg fig8.jpg fig9.jpg 
 
