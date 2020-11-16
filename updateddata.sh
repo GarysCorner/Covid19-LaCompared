@@ -28,7 +28,7 @@ rm fig9.jpg
 
 jupyter lab
 
-git commit -m "updated with data from upstead datasources `date`" fig1.jpg fig2.jpg fig3.jpg fig4.jpg fig5.jpg fig6.jpg fig7.jpg fig8.jpg fig9.jpg CovidData.ipynb
+git commit -a -m "updated with data from upstead datasources `date`"
 
 echo "DONE!"
 
