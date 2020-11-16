@@ -11,9 +11,8 @@ This is a simple project aimed at visualizing and comparing Covid-19 data from L
 
 * **[Louisiana Department of Health](https://ldh.la.gov/Coronavirus/)** - Data on new cases by parish as well as testing numbers.  This data comes out slower then the other data sources (every two weeksish) and so graphs using parish data, are behind graphics using NYTimes/OWID data.  Please look at the dates on the graphics carefully before making any comparisons between different data sets.
 * **[nytimes/covid-19-data](https://github.com/nytimes/covid-19-data)** - Data on new cases and new deaths in the US and Louisiana were taken from this dataset.  Nytimes data was used in most places for Louisiana, but in some places an reduction of the LaDH data was used to provide better comparison with parish data.
-* **[Data on Covid-19 from Our World in Data](https://github.com/owid/covid-19-data/tree/master/public/data)**
-* **[U.S. Census Bureau](https://www.census.gov)** - Population of the US and of Louisiana were taken from the Census Bureau and used for per capita comparisons.  Additional data on [FIPS codes](https://www.census.gov/2010census/xls/fips_codes_website.xls) by parish where taken from U.S. Census Bureau.
 * **[Our World in Data](https://github.com/owid/covid-19-data/)** - World Covid-19 data and [world population](https://ourworldindata.org/world-population-growth)
+* **[U.S. Census Bureau](https://www.census.gov)** - Population of the US and of Louisiana were taken from the Census Bureau and used for per capita comparisons.  Additional data on [FIPS codes](https://www.census.gov/2010census/xls/fips_codes_website.xls) by parish where taken from U.S. Census Bureau.
 
 Datasets taken from LaDH are dated by sample collection date, but NyTimes and OWID data is by reported date, so there is an offset in the dates between New Orleans/EBR and other datasets.  Please make note of this when drawing any conclusions.
 
