@@ -2,7 +2,11 @@
 
 **This project is a replacement for the garyscorner for of nytimes/covid-19-data which will no longer be updated**
 
-[View Project](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/CovidData.ipynb)
+[Watch the video on Youtube](https://youtu.be/pAnK_I578PA)
+
+[View Main Project](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/CovidData.ipynb)
+[View Mask Use Graph Project](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/MaskUseOverview.ipynb)
+[View Video Project](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/MaskUseRatesVideo.ipynb)
 
 ## Description
 This is a simple project aimed at visualizing and comparing Covid-19 data from Louisiana, a state which is very important to us (people from Louisiana).  The main analysis/visualization is in the file CovidData.py, which pulls data from one or more submodules or locations.
@@ -28,6 +32,12 @@ Datasets taken from LaDH are dated by sample collection date, but NyTimes and OW
 ![Figure 7](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig7.jpg)
 ![Figure 9](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig9.jpg)
 ![Figure 10](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig10.jpg)
+
+## Video
+
+[Watch the video on Youtube](https://youtu.be/pAnK_I578PA)
+
+![Screen_Shot](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/MaskUseVidScrShot.jpg)
 
 
 ## Limitation
