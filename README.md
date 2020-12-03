@@ -5,7 +5,9 @@
 [Watch the video on Youtube](https://youtu.be/pAnK_I578PA)
 
 [View Main Project](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/CovidData.ipynb)
+
 [View Mask Use Graph Project](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/MaskUseOverview.ipynb)
+
 [View Video Project](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/MaskUseRatesVideo.ipynb)
 
 ## Description
