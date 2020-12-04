@@ -1,5 +1,7 @@
 # Covid-19 Louisiana Data Compared
 
+**This project is NOT a scientific study!!!  Conclusions should not be drawn from the information contained here.  This is mostly an exercise in data processing and visualization.  For information you can draw conclusion on, please visit the [CDC's Covid19 page](https://www.cdc.gov/coronavirus/2019-ncov/index.html)**
+
 **This project is a replacement for the garyscorner for of nytimes/covid-19-data which will no longer be updated**
 
 [Watch the video on Youtube](https://youtu.be/pAnK_I578PA)
@@ -11,7 +13,7 @@
 [View Video Project](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/MaskUseRatesVideo.ipynb)
 
 ## Description
-This is a simple project aimed at visualizing and comparing Covid-19 data from Louisiana, a state which is very important to us (people from Louisiana).  The main analysis/visualization is in the file CovidData.py, which pulls data from one or more submodules or locations.
+This is a simple project aimed at visualizing and comparing Covid-19 data from Louisiana, a state which is very important to us (people from Louisiana).  The main analysis/visualization is in the file CovidData.py, which pulls data from one or more submodules or locations.  Other python notebooks (MaskUseRates.ipynb/MaskUseOverview.ipynb) contained in this project are not updated daily.
 
 ## Datasets
 
@@ -37,19 +39,21 @@ Datasets taken from LaDH are dated by sample collection date, but NyTimes and OW
 
 ## Video
 
+If you are drawing conclusions other then, "Wow, that's a neat graph", then you have made a mistake.  One should make note that there are a lot of factors that are correlated to mask use, population size, and infection rates, and just because two things are correlated does not mean they are causative.  For example in just this video you can see that there is a correlation between mask use and population size, a passing glance at the labels will tell us that the population densities in areas where mask use it common are probably higher.  Population density is one of those things you would expect to have influence on infection rates.  So again, if you are drawing conclusions from this video, know that you shouldn't. The author of this work makes no clames about the effectives of wearing a mask, population size, or anything else on infection rates.  If you want data and visualization upon which you SHOULD draw conclusion, please visit the [CDC's Covid19 page](https://www.cdc.gov/coronavirus/2019-ncov/index.html)
+
 [Watch the video on Youtube](https://youtu.be/pAnK_I578PA)
 
 ![Screen_Shot](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/MaskUseVidScrShot.jpg)
 
 
 ## Limitation
-The analysis here is done with data from outside sources, which themselves are compiling data from other sources, which themselves...  Some of these sources have changed for the US, and there are reasons to believe that some of them may have issues with reliability, and so the analysis here can only be as good as the underlying data, and this author makes no claims about that data.
+
+This is not a scientific study please don't treat it like one.  This is a data visualization and processing project.  Please keep that in mind.
+
+The analysis here is done with data from outside sources such as the [Louisiana Department of Health](https://ldh.la.gov/) and the [NYTimes](https://github.com/nytimes/covid-19-data/).  The sources have no affiliation with this project, and the projects maintainer makes no claims about the accuracy of the sources.  Essentially if you have an issue with what you see in the data, you should probably take it up with the upsteam data souces.
 
 Please excuse spelling, I hammered this out pretty quick, and if you are reading this it means I didn't follow through on circling back to fix it :(
 
 ## Liabilities
 This project should be interesting and nothing more, it is not intended for research purposed or policy decisions.  No decisions, assumptions, accusations, etc stemming from the analysis here should be made, and anyone who does so will do so at their own risk.  Any liability resulting from the use of this analysis is solely the end user's responsibility. 
-
-### Liabilities TLDR
-It's all on you bro, don't use this and then come blame me.
 
