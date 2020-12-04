@@ -43,6 +43,7 @@ If you are drawing conclusions other then, "Wow, that's a neat graph", then you 
 
 [Watch the video on Youtube](https://youtu.be/pAnK_I578PA)
 
+The below is an automatically generated screenshot, and is a single frame from the video linked above.  It doesn't mean much when viewed alone.
 ![Screen_Shot](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/MaskUseVidScrShot.jpg)
 
 
