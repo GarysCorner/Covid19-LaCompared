@@ -31,7 +31,7 @@ jupyter lab
 #update the README.md file
 python3 updatereadme.py
 
-git commit -a -m "updated with data from upstead datasources `date`"
+git commit -a -m "updated with data from upstream datasources `date`"
 
 echo "DONE!"
 
