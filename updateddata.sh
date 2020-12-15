@@ -28,6 +28,9 @@ rm fig9.jpg
 
 jupyter lab
 
+#update the README.md file
+python3 updatereadme.py
+
 git commit -a -m "updated with data from upstead datasources `date`"
 
 echo "DONE!"
