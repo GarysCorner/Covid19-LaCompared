@@ -1,4 +1,4 @@
-# Updated: January 27 2021  11:08 AM CST
+# Updated: January 28 2021  09:07 AM CST
 
 # Covid-19 Louisiana Data Compared
 
