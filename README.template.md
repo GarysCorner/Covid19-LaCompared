@@ -6,7 +6,9 @@
 
 **This project is a replacement for the garyscorner for of nytimes/covid-19-data which will no longer be updated**
 
-[Watch the video on Youtube](https://youtu.be/kwUjHoVM8p0)
+[Watch the Maps video on Youtube](https://youtu.be/KHUjEgC_evk)
+
+[Watch the Mask video on Youtube](https://youtu.be/kwUjHoVM8p0)
 
 [View Main Project](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/CovidData.ipynb)
 
@@ -25,6 +27,12 @@ This is a simple project aimed at visualizing and comparing Covid-19 data from L
 * **[U.S. Census Bureau](https://www.census.gov)** - Population of the US and of Louisiana were taken from the Census Bureau and used for per capita comparisons.  Additional data on [FIPS codes](https://www.census.gov/2010census/xls/fips_codes_website.xls) by parish where taken from U.S. Census Bureau.
 
 Datasets taken from LaDH are dated by sample collection date, but NyTimes and OWID data is by reported date, so there is an offset in the dates between New Orleans/EBR and other datasets.  Please make note of this when drawing any conclusions.
+
+## Maps
+
+[Watch the Maps video on Youtube](https://youtu.be/KHUjEgC_evk)
+
+![Recent Map](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/RecentMap.jpg)
 
 ## Output
 
@@ -53,6 +61,7 @@ The below is an automatically generated screenshot, and is a single frame from t
 * **.gitignore** - lists file patterns to be ignored by git
 * **.gitmodules** - provides linking to submodules
 * **CovidData.ipynb** - Jupyter notebook file, generates figures, and provides daily analysis
+* **CovidMaps.ipynb** - Jupyter notebook file, generates maps, and map video.
 * **LICENSE** - GNU General Public License v3.0
 * **MaskUseOverview.ipynb** - Jupyter notebook file, generates the mask use rages bar graph for Louisiana parishes
 * **MaskUseRatesVideo.ipynb** - Jupyter notebook file, generates maskuse/new cases rate comparision video (link at top)
