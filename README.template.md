@@ -12,6 +12,8 @@
 
 [View Main Project](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/CovidData.ipynb)
 
+[View Maps and Maps Video Project](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/CovidMaps.ipynb)
+
 [View Mask Use Graph Project](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/MaskUseOverview.ipynb)
 
 [View Video Project](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/MaskUseRatesVideo.ipynb)
