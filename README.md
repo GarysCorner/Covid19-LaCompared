@@ -1,4 +1,4 @@
-# Updated: February 22 2021  08:51 AM CST
+# Updated: February 23 2021  09:20 AM CST
 
 # Covid-19 Louisiana Data Compared
 
@@ -11,6 +11,8 @@
 [Watch the Mask video on Youtube](https://youtu.be/kwUjHoVM8p0)
 
 [View Main Project](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/CovidData.ipynb)
+
+[View Maps and Maps Video Project](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/CovidMaps.ipynb)
 
 [View Mask Use Graph Project](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/MaskUseOverview.ipynb)
 
