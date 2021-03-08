@@ -1,0 +1,3 @@
+#!/bin/bash
+
+#this file kicks off the whole process on AWS.  Sorry but its a trade secret
