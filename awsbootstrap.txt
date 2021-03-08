@@ -1,3 +1,20 @@
 #!/bin/bash
 
 #this file kicks off the whole process on AWS.  Sorry but its a trade secret
+
+sudo yum -y install git
+
+echo "github.com,140.82.114.4 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==" >> /home/ec2-user/.ssh/known_hosts
+
+aws s3 cp s3://machinglearning2252008739/coviddata_RSAKEY/id_rsa ~/.ssh
+aws s3 cp s3://machinglearning2252008739/coviddata_RSAKEY/id_rsa.pub ~/.ssh
+
+chmod 600 .ssh/id_rsa
+
+git clone --depth 1 git@github.com:GarysCorner/Covid19-LaCompared.git
+
+cd Covid19-LaCompared/
+
+/bin/bash awsrun.sh
+
+sudo shutdown -P 0
