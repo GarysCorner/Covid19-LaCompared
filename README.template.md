@@ -27,6 +27,7 @@ This is a simple project aimed at visualizing and comparing Covid-19 data from L
 * **[nytimes/covid-19-data](https://github.com/nytimes/covid-19-data)** - Data on new cases and new deaths in the US and Louisiana were taken from this dataset.  Nytimes data was used in most places for Louisiana, but in some places an reduction of the LaDH data was used to provide better comparison with parish data.
 * **[Our World in Data](https://github.com/owid/covid-19-data/)** - World Covid-19 data and [world population](https://ourworldindata.org/world-population-growth)
 * **[U.S. Census Bureau](https://www.census.gov)** - Population of the US and of Louisiana were taken from the Census Bureau and used for per capita comparisons.  Additional data on [FIPS codes](https://www.census.gov/2010census/xls/fips_codes_website.xls) by parish where taken from U.S. Census Bureau.
+* **[U.S. Geological Survey](https://pubs.usgs.gov/of/1998/of98-805/html/gismeta.htm)** - Shape files for inlane water.
 
 Datasets taken from LaDH are dated by sample collection date, but NyTimes and OWID data is by reported date, so there is an offset in the dates between New Orleans/EBR and other datasets.  Please make note of this when drawing any conclusions.
 
