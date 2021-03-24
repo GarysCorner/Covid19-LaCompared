@@ -6,9 +6,9 @@
 
 **This project is a replacement for the garyscorner for of nytimes/covid-19-data which will no longer be updated**
 
-[Watch the Maps video on Youtube](https://youtu.be/KHUjEgC_evk)
+[Watch the Maps video on Youtube](https://youtu.be/RiEHIBp87I8)
 
-[Watch the Mask video on Youtube](https://youtu.be/kwUjHoVM8p0)
+[Watch the Mask video on Youtube](https://youtu.be/4GHW_iREiJE)
 
 [View Main Project](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/CovidData.ipynb)
 
@@ -33,7 +33,7 @@ Datasets taken from LaDH are dated by sample collection date, but NyTimes and OW
 
 ## Maps
 
-[Watch the Maps video on Youtube](https://youtu.be/KHUjEgC_evk)
+[Watch the Maps video on Youtube](https://youtu.be/RiEHIBp87I8)
 
 ![Recent Map](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/RecentMap.jpg)
 
@@ -54,7 +54,7 @@ Datasets taken from LaDH are dated by sample collection date, but NyTimes and OW
 
 If you are drawing conclusions other then, "Wow, that's a neat graph", then you have made a mistake.  One should make note that there are a lot of factors that are correlated to mask use, population size, and infection rates, and just because two things are correlated does not mean they are causative.  For example in just this video you can see that there is a correlation between mask use and population size, a passing glance at the labels will tell us that the population densities in areas where mask use it common are probably higher.  Population density is one of those things you would expect to have influence on infection rates.  So again, if you are drawing conclusions from this video, know that you shouldn't. The author of this work makes no clames about the effectives of wearing a mask, population size, or anything else on infection rates.  If you want data and visualization upon which you SHOULD draw conclusion, please visit the [CDC's Covid19 page](https://www.cdc.gov/coronavirus/2019-ncov/index.html)
 
-[Watch the video on Youtube](https://youtu.be/kwUjHoVM8p0)
+[Watch the video on Youtube](https://youtu.be/4GHW_iREiJE)
 
 The below is an automatically generated screenshot, and is a single frame from the video linked above.  It doesn't mean much when viewed alone.
 ![Screen_Shot](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/MaskUseVidScrShot.jpg)
