@@ -6,6 +6,7 @@ git pull
 cd ../owid-coviddata/
 git pull
 
+mkdir LaDeptHealth
 cd ../LaDeptHealth
 curl -O https://ldh.la.gov/assets/oph/Coronavirus/data/LA_COVID_TESTBYDAY_PARISH_PUBLICUSE.xlsx
 
