@@ -1,10 +1,10 @@
 #!/bin/bash
 
 cd ./covid-19-data/
-git pull
+git pull origin master
 
 cd ../owid-coviddata/
-git pull
+git pull origin master
 
 mkdir LaDeptHealth
 cd ../LaDeptHealth
