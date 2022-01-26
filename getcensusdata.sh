@@ -6,7 +6,7 @@ rm -R ./uscensus
 mkdir uscensus
 cd uscensus
 
-curl -O https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/counties/totals/co-est2019-alldata.csv
+curl -O https://www2.census.gov/programs-surveys/popest/datasets/2010-2020/counties/totals/co-est2020-alldata.csv
 
 curl -O https://www2.census.gov/programs-surveys/popest/geographies/2018/all-geocodes-v2018.xlsx
 
