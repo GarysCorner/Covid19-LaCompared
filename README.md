@@ -6,7 +6,7 @@
 
 **This project is a replacement for the garyscorner for of nytimes/covid-19-data which will no longer be updated**
 
-[Watch the Maps video on Youtube](https://youtu.be/RiEHIBp87I8)
+[Watch the Maps video on Youtube](https://youtu.be/DNYIbDoINaw)
 
 [Watch the Mask video on Youtube](https://youtu.be/4GHW_iREiJE)
 
@@ -33,7 +33,7 @@ Datasets taken from LaDH are dated by sample collection date, but NyTimes and OW
 
 ## Maps
 
-[Watch the Maps video on Youtube](https://youtu.be/RiEHIBp87I8)
+[Watch the Maps video on Youtube](https://youtu.be/DNYIbDoINaw)
 
 ![Recent Map](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/RecentMap.jpg)
 
