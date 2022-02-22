@@ -1,4 +1,4 @@
-# Updated: February 21 2022  11:05 AM CST
+# Updated: February 22 2022  09:39 AM CST
 
 # Covid-19 Louisiana Data Compared
 
@@ -6,7 +6,7 @@
 
 **This project is a replacement for the garyscorner for of nytimes/covid-19-data which will no longer be updated**
 
-[Watch the Maps video on Youtube](https://youtu.be/DNYIbDoINaw)
+[Watch the Maps video on Youtube](https://youtu.be/RiEHIBp87I8)
 
 [Watch the Mask video on Youtube](https://youtu.be/4GHW_iREiJE)
 
@@ -33,7 +33,7 @@ Datasets taken from LaDH are dated by sample collection date, but NyTimes and OW
 
 ## Maps
 
-[Watch the Maps video on Youtube](https://youtu.be/DNYIbDoINaw)
+[Watch the Maps video on Youtube](https://youtu.be/RiEHIBp87I8)
 
 ![Recent Map](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/RecentMap.jpg)
 
