@@ -49,7 +49,7 @@ Datasets taken from LaDH are dated by sample collection date, but NyTimes and OW
 ![Figure 7](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig7.jpg)
 ![Figure 9](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig9.jpg)
 ![Figure 10](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig10.jpg)
-
+![Figure 11](https://github.com/GarysCorner/Covid19-LaCompared/blob/master/fig11.jpg)
 ## Video
 
 If you are drawing conclusions other then, "Wow, that's a neat graph", then you have made a mistake.  One should make note that there are a lot of factors that are correlated to mask use, population size, and infection rates, and just because two things are correlated does not mean they are causative.  For example in just this video you can see that there is a correlation between mask use and population size, a passing glance at the labels will tell us that the population densities in areas where mask use it common are probably higher.  Population density is one of those things you would expect to have influence on infection rates.  So again, if you are drawing conclusions from this video, know that you shouldn't. The author of this work makes no clames about the effectives of wearing a mask, population size, or anything else on infection rates.  If you want data and visualization upon which you SHOULD draw conclusion, please visit the [CDC's Covid19 page](https://www.cdc.gov/coronavirus/2019-ncov/index.html)
